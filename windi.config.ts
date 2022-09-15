@@ -1,5 +1,7 @@
 
 import { defineConfig } from 'windicss/helpers'
+import typography from 'windicss/plugin/typography'
+import colors from 'windicss/colors'
 function range (size, startAt = 1) {
   return Array.from(Array(size).keys()).map(i => i + startAt)
 }
