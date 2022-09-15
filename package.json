@@ -19,6 +19,7 @@
     "vite-plugin-eslint": "^1.8.1"
   },
   "dependencies": {
+    "@pinia/nuxt": "^0.4.2",
     "eslint-plugin-prettier": "^4.2.1"
   }
 }
