@@ -1,6 +1,6 @@
 <template>
-  <div class="w-full h-screen dark">
-    <Theme />
+  <div class="w-full">
+    <Navigation class="justify-self-center" />
     <NuxtPage />
   </div>
 </template>
