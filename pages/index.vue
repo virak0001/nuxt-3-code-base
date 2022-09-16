@@ -1,3 +1,7 @@
 <template>
-  <div>Welcome Homepage</div>
+  <div class="w-full">
+    <InfoContainer>
+      <InfoApplication />
+    </InfoContainer>
+  </div>
 </template>

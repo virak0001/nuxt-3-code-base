@@ -1,12 +1,10 @@
 
 import { defineConfig } from 'windicss/helpers'
-import typography from 'windicss/plugin/typography'
-import colors from 'windicss/colors'
 function range (size, startAt = 1) {
   return Array.from(Array(size).keys()).map(i => i + startAt)
 }
 export default defineConfig({
-  preflight: false,
+  preflight: true,
   safelist: [
     range(30).map(i => `p-${i}`), // p-1 to p-30
     range(10).map(i => `mt-${i}`) // mt-1 to mt-10

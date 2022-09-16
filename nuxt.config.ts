@@ -5,6 +5,7 @@ import eslintPlugin from 'vite-plugin-eslint'
 export default defineNuxtConfig({
   buildModules: [
     'nuxt-windicss',
+    '@nuxtjs/color-mode',
     [
       '@pinia/nuxt',
       {
