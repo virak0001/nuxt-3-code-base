@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-between mx-auto max-w-7xl py-4">
-    <div class="flex items-center gap gap-4 ml-2">
+    <div class="flex items-center gap gap-4 ml-2 uppercase">
       <NuxtLink v-for="(menu, index) in menus" :key="index" :to="menu.name">
         {{ menu.name }}
       </NuxtLink>
