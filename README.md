@@ -42,6 +42,9 @@ npm run preview
 Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
 
 ## Dependencies used:
+
 ## https://color-mode.nuxtjs.org/
+
 ## https://vueuse.org/
+
 ## https://pinia.vuejs.org/

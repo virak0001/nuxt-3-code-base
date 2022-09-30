@@ -33,7 +33,9 @@ const props = withDefaults(defineProps<Props>(), {
 const emit = defineEmits(['click'])
 
 const onClick = () => {
-  if (props.loading || props.disabled) { return }
+  if (props.loading || props.disabled) {
+    return
+  }
   emit('click')
 }
 
