@@ -5,7 +5,7 @@
         {{ menu.name }}
       </NuxtLink>
     </div>
-    <div class="flex items-center">
+    <div class="flex items-center gap gap-2">
       <svg
         class="h-6 w-6 cursor-pointer"
         xmlns="http://www.w3.org/2000/svg"
@@ -26,7 +26,7 @@
         src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
         alt=""
       >
-      <CommonTheme class="ml-3" />
+      <CommonTheme />
     </div>
   </div>
 </template>
