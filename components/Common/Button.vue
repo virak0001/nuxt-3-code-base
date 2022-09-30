@@ -5,7 +5,13 @@
     :disabled="loading || disabled"
     @click.stop="onClick"
   >
-    click
+    <svgIcon v-if="loading" name="spinner" class="h-full w-full animate-spin" />
+    <svgIcon
+      v-else-if="icons[variant]"
+      :name="icons[variant]"
+      class="h-full w-full"
+    />
+    <slot v-else />
   </button>
 </template>
 
@@ -46,5 +52,11 @@ function getClasses (): string {
     appliedClasses += ' opacity-50 cursor-not-allowed'
   }
   return appliedClasses
+}
+
+const icons = {
+  primary: '',
+  cancel: '',
+  confirm: 'check'
 }
 </script>
