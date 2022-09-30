@@ -43,7 +43,7 @@
 <script setup lang="ts">
 function mode () {
   const colorMode = useColorMode()
-  if (colorMode.value === 'dark') { colorMode.preference = 'light' } else { colorMode.preference = 'dark' }
+  colorMode.value === 'dark' ? colorMode.preference = 'light' : colorMode.preference = 'dark'
 }
 </script>
   <style>
