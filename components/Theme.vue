@@ -1,5 +1,5 @@
 <template>
-  <div class="flex w-9 h-9 rounded-full text-white justify-center items-center cursor-pointer" @click="mode">
+  <div class="flex w-9 h-9 rounded-full justify-center items-center cursor-pointer" @click="mode">
     <svg
       v-if="$colorMode.value === 'dark'"
       xmlns="http://www.w3.org/2000/svg"
