@@ -18,7 +18,7 @@
     "@nuxtjs/eslint-config-typescript": "^11.0.0",
     "@typescript-eslint/eslint-plugin": "^5.37.0",
     "@typescript-eslint/parser": "^5.37.0",
-    "eslint": "^8.23.1",
+    "eslint": "^8.24.0",
     "eslint-plugin-vue": "^9.4.0",
     "nuxt": "3.0.0-rc.9",
     "nuxt-windicss": "^2.5.2",
