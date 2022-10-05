@@ -1,7 +1,7 @@
 <template>
   <div
-    class="flex w-9 h-9 rounded-full justify-center items-center cursor-pointer"
-    @click="mode($colorMode.value)"
+    class="rounded-full cursor-pointer font-poppins text-gray-lite font-medium p-3 transition-all duration-300 ease-in-out  dark:hover:text-white dark:bg-[#212425] hover:text-white hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] transition-all duration-300 ease-in-out"
+    :class="$colorMode.value === 'light' ? 'bg-white' : 'bg-grey'"
   >
     <SvgRiComputerLine v-show="$colorMode.value === 'system'" class="h-5 w-5" />
     <SvgRiSunLine v-show="$colorMode.value === 'dark'" class="h-5 w-5" @click="mode('light')" />

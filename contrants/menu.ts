@@ -5,11 +5,15 @@ export const menus = [
   },
   {
     name: 'About',
-    link: 'teams'
+    link: 'about'
   },
   {
     name: 'Resume',
-    link: 'Works'
+    link: 'resume'
+  },
+  {
+    name: 'Works',
+    link: 'works'
   },
   {
     name: 'Blogs',

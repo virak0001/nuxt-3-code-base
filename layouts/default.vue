@@ -1,7 +1,7 @@
 <template>
   <div
-    class="min-h-screen bg-no-repeat bg-center bg-cover bg-fixed  md:pb-16 w-full"
-    :class="$colorMode.value === 'light'?' bg-homeBg' : 'bg-homeBg-dark'"
+    class="min-h-screen bg-no-repeat bg-center bg-cover bg-fixed  md:pb-16 w-full bg-homeBg"
+    :class="backgroundImage"
   >
     <div class="container">
       <Navigation class="justify-self-center" />
@@ -9,6 +9,9 @@
     </div>
   </div>
 </template>
+<script setup lang="ts">
+import { backgroundImage } from '~/composables/colorTheme'
+</script>
 <style scoped>
 .container {
   margin: auto;
