@@ -1,35 +1,27 @@
 <template>
-  <div class="flex justify-between py-4 shadow shadow-lg rounded-lg md:px-5">
-    <div class="flex items-center gap gap-4 ml-2 uppercase">
-      <NuxtLink v-for="(menu, index) in menus" :key="index" :to="menu.link">
+  <div class="flex justify-between py-1">
+    <img src="~/assets/logo/personal-vector-logo.png" class="w-30 h-30">
+    <div class="flex items-center gap gap-4 ml-2">
+      <NuxtLink
+        v-for="(menu, index) in menus"
+        :key="index"
+        :to="menu.link"
+        class="flex rounded-md cursor-pointer font-poppins text-xtiny gap gap-2.5 text-sm py-2 md:px-4 xl:px-5 font-medium items-center  transition-all duration-300 ease-in-out  dark:hover:text-white dark:bg-[#212425] hover:text-white hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] transition-all duration-300 ease-in-out"
+        :class="backgroundColor"
+      >
+        <SvgRiHome3Line v-if="menu.name === 'Home'" class="h-6 w-6" />
+        <SvgRiAccountPinCircleLine v-if="menu.name === 'About'" class="h-6 w-6" />
+        <SvgRiNewspaperLine v-if="menu.name === 'Resume'" class="h-6 w-6" />
+        <SvgRiBlockPost v-if="menu.name === 'Blogs'" class="h-6 w-6" />
+        <SvgRiContactsBook2Line v-if="menu.name === 'Contact'" class="h-6 w-6" />
+        <SvgRiContactsBook2Line v-if="menu.name === 'Works'" class="h-6 w-6" />
         {{ menu.name }}
       </NuxtLink>
-    </div>
-    <div class="flex items-center gap gap-2">
-      <svg
-        class="h-6 w-6 cursor-pointer"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        aria-hidden="true"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"
-        />
-      </svg>
-      <img
-        class="h-8 w-8 rounded-full cursor-pointer"
-        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-        alt=""
-      >
       <CommonTheme />
     </div>
   </div>
 </template>
 <script setup lang="ts">
 import { menus } from '~/contrants/menu'
+import { backgroundColor } from '~/composables/colorTheme'
 </script>
