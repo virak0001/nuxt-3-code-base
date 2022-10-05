@@ -1,18 +1,22 @@
 export const menus = [
   {
-    name: 'Dashboard',
+    name: 'Home',
     link: '/'
   },
   {
-    name: 'Teams',
+    name: 'About',
     link: 'teams'
   },
   {
-    name: 'Projects',
-    link: 'projects'
+    name: 'Resume',
+    link: 'Works'
   },
   {
-    name: 'Calendar',
-    link: 'calendars'
+    name: 'Blogs',
+    link: 'blogs'
+  },
+  {
+    name: 'Contact',
+    link: 'contact'
   }
 ]
