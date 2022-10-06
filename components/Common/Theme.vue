@@ -12,17 +12,14 @@ const isDark = useDark()
 const toggleDark = useToggle(isDark)
 
 watch(isDark, () => {
-  const app = document.querySelector('.app-bg')
-  if (isDark.value) {
-    app.classList.add('bg-home-dark')
-    app.classList.remove('bg-home-light')
-  } else {
-    app.classList.add('bg-home-light')
-    app.classList.remove('bg-home-dark')
-  }
+  handleMode()
 })
 
 onMounted(() => {
+  handleMode()
+})
+
+function handleMode () {
   const app = document.querySelector('.app-bg')
 
   if (isDark.value) {
@@ -32,5 +29,5 @@ onMounted(() => {
     app.classList.add('bg-home-light')
     app.classList.remove('bg-home-dark')
   }
-})
+}
 </script>
