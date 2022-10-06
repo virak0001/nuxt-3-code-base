@@ -12,5 +12,5 @@ export default defineConfig({
     include: ['**/*.{vue,html,jsx,tsx}'],
     exclude: ['node_modules', '.git']
   },
-  darkMode: 'media'
+  darkMode: 'class'
 })

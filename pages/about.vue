@@ -1,7 +1,7 @@
 <template>
   <div class="w-full">
     <InfoContainer>
-      <InfoResume />
+      <InfoAbout />
     </InfoContainer>
   </div>
 </template>
