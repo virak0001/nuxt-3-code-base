@@ -1,8 +1,5 @@
 <template>
-  <div
-    class="min-h-screen bg-no-repeat bg-center bg-cover bg-fixed  md:pb-16 w-full bg-homeBg"
-    :class="backgroundImage"
-  >
+  <div class="min-h-screen app-bg bg-no-repeat bg-center bg-cover bg-fixed  md:pb-16 w-full">
     <div class="container">
       <Navigation class="justify-self-center" />
       <NuxtPage />
@@ -10,9 +7,8 @@
   </div>
 </template>
 <script setup lang="ts">
-import { backgroundImage } from '~/composables/colorTheme'
 </script>
-<style scoped>
+<style>
 .container {
   margin: auto;
   width: 100%;
@@ -23,16 +19,18 @@ import { backgroundImage } from '~/composables/colorTheme'
     max-width: 992px;
   }
 }
-@media(min-width: 1280px){
+
+@media(min-width: 1280px) {
   .container {
     max-width: 1280px;
   }
 }
 
-.bg-homeBg{
+.bg-home-light {
   background-image: url('~/assets/background/background-home.jpg');
 }
-.bg-homeBg-dark {
+
+.bg-home-dark {
   background-image: url('~/assets/background/background-home-dark.jpg');
 }
 </style>
