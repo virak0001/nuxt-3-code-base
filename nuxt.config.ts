@@ -1,16 +1,7 @@
-import { defineNuxtConfig } from 'nuxt'
-import eslintPlugin from 'vite-plugin-eslint'
+import { defineNuxtConfig } from 'nuxt/config'
+
 export default defineNuxtConfig({
-  buildModules: [
-    'nuxt-windicss',
-    [
-      '@pinia/nuxt',
-      {
-        autoImports: ['defineStore', ['defineStore', 'definePiniaStore']]
-      }
-    ]
-  ],
-  vite: {
-    plugins: [eslintPlugin()]
-  }
+  modules: [
+    'nuxt-windicss'
+  ]
 })
