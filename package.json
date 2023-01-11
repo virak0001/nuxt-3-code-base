@@ -30,6 +30,7 @@
   "dependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
+    "@nuxtjs/composition-api": "^0.33.1",
     "@pinia/nuxt": "^0.4.2",
     "@vueuse/core": "^9.2.0",
     "eslint-config-prettier": "^8.5.0",
